@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <style>
+    .card {
+        height: 100%;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.1); ;
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover; 
+    }
+
+  </style>
+</head>
+
+<body tabindex="-1">
+    <%- include('partials/navbar', {page:'/home'}) %>
+
+  <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+              <div class="max-w-lg">
+                  <h1 class="text-5xl font-bold">Explore Our Vast Lego Universe</h1>
+      
+                  <p class="py-6">Embark on a Boundless Adventure with our LEGO Collection, Where Creativity Knows No Limits and Every Piece Unlocks a World of Possibilities.</p>
+              
+                  <a href="/lego/sets" class="btn btn-primary">View</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+
+          <div class="card bg-base-100 shadow-xl">
+              <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/5003452-1.jpg" alt="Lego set - 5003452-1">
+              </figure>
+              <div class="card-body">
+              <h2 class="card-title">StoryStarter Package - 30 Students</h2>
+              <p>The "StoryStarter Package - 30 Students" is an educational resource developed by LEGO Education, designed to foster creativity, collaboration, and literacy skills among students.</p>
+                  <div class="card-actions justify-end">
+                          <a href="/lego/sets/5003452-1" class="btn btn-primary">View</a>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full" src="https://cdn.rebrickable.com/media/sets/5003473-1.jpg" alt="Lego Set 5003473-1">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Creative Builder Center Pack</h2>
+            <p>The Creative Builder Center Pack is a versatile educational resource designed by LEGO Education to promote creativity, problem-solving, and collaboration in classroom settings. </p>
+            <div class="card-actions justify-end">
+                <a href="/lego/sets/5003473-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full " src="https://cdn.rebrickable.com/media/sets/5003544-1.jpg" alt="Lego Set - 5003544-1">
+          </figure>
+          <div class="card-body">
+          <h2 class="card-title">The LEGO Movie Video Game - 3DS</h2>
+          <p>"The LEGO Movie Video Game" for the Nintendo 3DS brings the beloved characters and adventures of the hit animated film to the world of handheld gaming. Developed by TT Fusion and published by Warner Bros.</p>
+              <div class="card-actions justify-end">
+                  <a href="/lego/sets/5003544-1" class="btn btn-primary">View</a>
+              </div>
+          </div>
+      </div>
+
+      </div>
+  </div>
+  
+</body>
+
+</html>
